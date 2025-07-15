@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Irrigação Inteligente</title>
+</head>
+<body>
+  <style>
+     body {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9f4;
+      color: #333333;
+      border: 8px solid;
+      border-color: #85682b;
+    }
+
+    header {
+      background-color: #2e7d32; 
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 27px;
+    }
+
+    .foto{
+      display: block;
+      margin: 20px auto; 
+      width: 30%; 
+      max-width: 800px;
+      border: 8px solid;
+      border-style:ridge;
+      border-color: #85682b;
+      border-radius: 20px;
+    }
+
+    nav {
+      background: #85682b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease, text-decoration 0.3s ease;
+   }
+    nav a:hover {
+  text-decoration: underline;
+  transform: translateY(-3px);
+   } 
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2e7d32;
+    }
+
+    .box {
+      background: white;
+      border-left: 5px solid #85682b;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .redes-sociais {
+    display: inline-flex;
+    gap: 10px;
+    font-size: 0; 
+  }
+
+    .redes {
+    width: 40px;  
+    height: auto;     
+  }
+
+  .redes:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+
+<header>
+  <h1>- SII Sistema de Irrigação Inteligente-</h1>
+  <p>Uso de Reservatório Subterrâneo e Sensor de Umidade</p>
+</header>
+
+<nav>
+  <a href="#problema">Problema</a>
+  <a href="#objetivo">Objetivo</a>
+  <a href="#funcionamento">Funcionamento</a>
+  <a href="#materiais">Materiais</a>
+  <a href="#beneficios">Benefícios</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<br>
+<br>
+<img src="https://cdn.glitch.global/2a855369-2424-46be-aa70-8cbac142956e/ab0e23ea-94cb-423a-ad21-000e1ec16838.image.png?v=1747254247724" class="foto">
+
+<section id="problema">
+  <h2 style="font-size: 40px;"><li>O Problema</li></h2>
+  <div class="box">
+    <p>O desperdício de água na agricultura tradicional e nas hortas urbanas representa um dos maiores desafios ambientais da atualidade. Em muitas regiões, práticas de irrigação ineficientes levam ao uso excessivo e desnecessário da água, um recurso natural cada vez mais escasso. Em especial, a irrigação manual, muito comum em hortas comunitárias, escolares ou domésticas, é frequentemente realizada sem critérios técnicos, desconsiderando fatores importantes como a umidade real do solo, o clima do dia ou a necessidade hídrica específica das plantas.</p>
+
+<p>Essa forma desregulada de irrigação contribui diretamente para o esgotamento das reservas hídricas, o aumento no custo da água e a degradação dos ecossistemas, principalmente em áreas urbanas e periurbanas onde os recursos já são limitados. Além disso, em regiões agrícolas mais amplas, a falta de tecnologias sustentáveis e acessíveis compromete não só a eficiência produtiva, mas também a preservação ambiental a longo prazo.</p>
+
+<p>Diante desse cenário, é urgente buscar soluções inteligentes e sustentáveis que promovam o uso racional da água, aliando tecnologia, consciência ambiental e viabilidade prática. Sistemas automatizados que utilizam sensores de umidade, captação de água da chuva e reservatórios subterrâneos surgem como alternativas promissoras para enfrentar esse problema de forma eficaz, tanto no campo quanto nas cidades.</p>
+  </div>
+</section>
+
+<section id="objetivo">
+  <h2 style="font-size: 40px;"><li>Nosso Objetivo</li></h2>
+  <div class="box">
+    <p>Apresentar uma solução sustentável e automatizada que utiliza água da chuva coletada em reservatório subterrâneo e sensores de umidade para irrigar plantas de forma eficiente, reduzindo o desperdício de água e promovendo a agricultura inteligente.</p>
+  </div>
+</section>
+
+<section id="funcionamento">
+  <h2 style="font-size: 40px;"><li>Como Funciona?</li></h2>
+  <div class="box">
+    <ul>
+      <li>Água da chuva é captada por calhas e conduzida até um reservatório subterrâneo.</li>
+      <li>O sensor de umidade no solo detecta quando a terra está seca.</li>
+      <li>Um microcontrolador (como o Arduino) ativa a bomba d'água conectada ao reservatório.</li>
+      <li>A água é então liberada para irrigar a plantação apenas quando necessário.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="materiais">
+  <h2 style="font-size: 40px;"><li>Materiais Utilizados</li></h2>
+  <div class="box">
+    <ul>
+      <li>Sensor de umidade do solo</li>
+      <li>Arduino Uno ou ESP32</li>
+      <li>Bomba d’água 12V</li>
+      <li>Reservatório enterrado (ex: caixa d'água ou galão reciclado)</li>
+      <li>Placa solar (opcional)</li>
+      <li>Tubulação para irrigação</li>
+    </ul>
+  </div>
+</section>
+
+<section id="beneficios">
+  <h2 style="font-size: 40px;"><li>Benefícios da Solução</li></h2>
+  <div class="box">
+    <ul>
+      <li>Economia de água com irrigação controlada</li>
+      <li>Uso de energia renovável (solar, opcional)</li>
+      <li>Redução do trabalho manual</li>
+      <li>Incentivo à agricultura sustentável</li>
+      <li>Possibilidade de uso em hortas escolares, quintais e áreas rurais</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<section id="contato">
+  <h2 style="font-size: 40px;"><li>Entre em Contato</li></h2>
+  <div class="box">
+    <p>Gostou do projeto? Entre em contato com a equipe para saber mais!</p>
+    
+   <div  class="redes-sociais">
+    <a href="https://facebook.com" title="Facebook" target="_blank">
+        <img src="https://cdn.glitch.global/2a855369-2424-46be-aa70-8cbac142956e/facebook-13.png?v=1746387904482" class="redes">
+    </a>
+
+    <a href="https://instagram.com" title="Instagram" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="redes">
+    </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>Feira de Ciências 2025 • Projeto por Lucas & Angelina</p>
+</footer>
+
+</body>
+</html>
